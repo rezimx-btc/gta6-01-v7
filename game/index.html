@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MARAVELA: NEON TIDE</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="600"></canvas>
+  <div id="hud">
+    <div id="stats">
+      <span id="cash">$0</span>
+      <span id="respect">REP 0</span>
+      <span id="rank">Street Punk</span>
+    </div>
+    <div id="stars"></div>
+    <div id="mission">
+      <div id="missionTitle">MARAVELA</div>
+      <div id="missionText">Welcome to the coast.</div>
+    </div>
+    <div id="radio">RADIO 98.7 Tide FM</div>
+    <div id="speed"></div>
+    <canvas id="minimap" width="180" height="135"></canvas>
+    <div id="toast"></div>
+  </div>
+</div>
+<div id="menu" class="overlay">
+  <h1>MARAVELA</h1>
+  <h2>NEON TIDE</h2>
+  <p class="tag">A sun-soaked open-world crime game on the neon coast.</p>
+  <button id="btnStart">START NEW GAME</button>
+  <button id="btnContinue" class="hidden">CONTINUE</button>
+  <div class="controls">
+    <p>WASD / Arrows — drive or walk &nbsp;·&nbsp; E — enter car / carjack</p>
+    <p>Space — handbrake &nbsp;·&nbsp; F — radio &nbsp;·&nbsp; M — mute</p>
+    <p>1 / 2 / 3 — crew abilities &nbsp;·&nbsp; B — weapon shop &nbsp;·&nbsp; G — garage</p>
+    <p>S — save &nbsp;·&nbsp; P — pause</p>
+  </div>
+</div>
+<div id="shop" class="overlay hidden">
+  <h2 id="shopTitle">SHOP</h2>
+  <div id="shopItems"></div>
+  <button id="btnCloseShop">CLOSE [B/G]</button>
+</div>
+<div id="paused" class="overlay hidden">
+  <h2>PAUSED</h2>
+  <p>Press P to resume.</p>
+</div>
+<div id="win" class="overlay hidden">
+  <h1>LEGEND OF THE COAST</h1>
+  <p id="winText"></p>
+  <button id="btnFreeRoam">KEEP DRIVING — FREE ROAM</button>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
